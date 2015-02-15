@@ -41,6 +41,8 @@
 	margin-left: 50px;
 	margin-right: 50px;
 	text-align: center;
+	margin-top:10px;
+	margin-bottom: 10px;
 }
 
 .vim {
@@ -50,6 +52,11 @@
 
 .edful {
 	background: #ffffff url("images/edful.png") no-repeat right top;
+	background-size: auto 200px;
+}
+
+.pypet {
+	background: #ffffff url("images/pypet.png") no-repeat right top;
 	background-size: auto 200px;
 }
 
@@ -84,6 +91,7 @@ h1 {
 
 h2 {
 	font-family: Vollkorn;
+	font-size: 40px;
 }
 
 .title {
@@ -99,7 +107,7 @@ h3 {
 	margin: 5px;
 }
 
-a {
+.frame a {
 	font-family: Arial;
 	font-size: 45px;
 	color: #520000;
