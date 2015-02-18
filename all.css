@@ -1,19 +1,95 @@
+ /*fonts*/
 
-
-:root{
-    /*Older css syntax snippet chrome 29-33, FF 29:*/
-    var-MainColor:#520000;
-    /*new/upcoming syntax, FF 31+ Chrome ???*/
-    --main-color:#520000;
+ .company {
+	padding: 0;
+	margin: 0;
 }
 
+.title {
+	margin-top: 0;
+	padding: 0px;
+	font-size: 30px;
+	font-family: "Lato";
+}
 
-*, *:before, *:after{ 
-    box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-} 
-.flag-right{
+.icons {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0px;
+	font-size: 40px;
+	letter-spacing: 10px;
+}
+
+ .name {
+	margin: 0;
+	padding: 0;
+/*	text-shadow: 2px 2px white;*/
+	font-size: 75px;
+
+}
+
+h1 {
+	font-family: "Cinzel";
+	font-style: bold;
+	padding: 0;
+	margin: 20px;
+    color: white;
+    font-size: 150px;
+}
+
+h2 {
+	font-family: "Lato";
+	font-size: 30px;
+	color: white;
+}
+
+.countries {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0px;
+}
+
+p {
+	color: white;
+}
+
+h3 {
+	font-family: Arial;
+	font-size: 30px;
+	padding: 0;
+	margin: 5px;
+	color: white;
+}
+
+a p {
+	vertical-align: middle;
+	background-color: rgba(0,0,0,0.75);
+}
+
+a {
+	color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*flags*/
+
+ .flag-right{
 	width: 300px;
 	display: inline-block;
 	float: right;
@@ -57,17 +133,18 @@
 	text-align: center;
 }
 
+/*containers*/
 
-header a {
-	color: white;
+header {
+	background-color: rgba(0,0,0, 0.5);
+	height: 550px;
+	width: 100%;
 }
-
 
 .main-content {
 	text-align: left;
 	width: 100%;
 	height: 500px;
-	margin: auto;
 	position: relative;
 	top: 50px;
 }
@@ -86,13 +163,45 @@ header a {
 }
 
 .frame:hover {
-	box-shadow: 0px 0px 242px 42px rgba(255,255,255,1);
+	box-shadow: 0px 0px 242px 42px rgba(0,0,0, 0.5));
 }
 
-img {
-	-webkit-filter: sepia(100%);
-	filter: sepia(100%);
+.iframe {
+	position: absolute;
+	z-index: -2;
+	width: 100%;
+	top: 25px;
+	left: 0;
 }
+
+/*.filter {
+	position: absolute;
+	background-color: rgba(0,0,0, 0.5);
+	z-index: -1;
+	width: 100%;
+	height: auto;
+	top: 25px;
+	left: 0;
+}*/
+
+
+body {
+	text-align: center;
+	background-color: beige;
+}
+
+.frame {
+	font-family: "Lato";
+	font-size: 45px;
+	color: white;
+}
+
+.intro {
+	padding-top: 200px;
+	padding-bottom: 0;
+}
+
+/*background images*/
 
 .vim {
 	background: #ffffff url("images/vim.png") no-repeat right top;
@@ -122,127 +231,4 @@ img {
 .simple {
 	background: #ffffff url("images/simple.png") no-repeat right top;
 	background-size: auto 200px;
-}
-
-header {
-/*	background-color: rgba(0,0,0, 0.5);*/
-	height: 550px;
-	width: 100%;
-}
-
-.iframe {
-	position: absolute;
-	z-index: -2;
-	width: 100%;
-	top: 25px;
-	left: 0;
-}
-
-.filter {
-	position: absolute;
-	background-color: rgba(0,0,0, 0.5);
-	z-index: -1;
-	width: 100%;
-	height: 560px;
-	top: 25px;
-	left: 0;
-}
-
-
-body {
-	text-align: center;
-	background-color: beige;
-	color: white;
-/*	background-image: url("images/sma.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-}
-
-.name {
-	margin: 0;
-	padding: 0;
-/*	text-shadow: 2px 2px white;*/
-	font-size: 75px;
-
-}
-
-h1 {
-	font-family: "Cinzel";
-	font-style: bold;
-	padding: 0;
-	margin: 20px;
-    color: white;
-    font-size: 150px;
-}
-
-h2 {
-	font-family: "Lato";
-	font-size: 30px;
-}
-
-.intro {
-	padding-top: 200px;
-	padding-bottom: 0;
-}
-
-.company {
-	padding: 0;
-	margin: 0;
-}
-
-.title {
-	margin-top: 0;
-	padding: 0px;
-	font-size: 30px;
-	font-family: "Lato";
-}
-
-.icons {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0px;
-	font-size: 40px;
-	letter-spacing: 10px;
-}
-
-.countries {
-	font-size: 30px;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0px;
-}
-
-h3 {
-	font-family: Arial;
-	font-size: 30px;
-	padding: 0;
-	margin: 5px;
-}
-
-.frame {
-	font-family: "Lato";
-	font-size: 45px;
-	color: white;
-}
-
-a p {
-	vertical-align: middle;
-	background-color: rgba(0,0,0,0.75);
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
 }
